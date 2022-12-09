@@ -1,0 +1,13 @@
+---
+- name: sample play echo command
+  hosts: allplaybooks
+  tasks: 
+  - name: use Hello World
+    command: echo "Hello World"
+
+# ---
+# - name: sample play echo command
+#   hosts: allservers
+#   tasks:
+#     - name: use echo command
+#       command: echo "hello world"   

@@ -1,0 +1,11 @@
+---
+- name: copying file
+  hosts: allplaybooks
+  tasks:
+    - name: copying cal2025
+      copy: 
+        src: /home/student/ANSIBLE/adhoc/cal2025.txt
+        dest: /tmp/calender
+        mode: '0777'
+    
+...      
